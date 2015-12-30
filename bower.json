@@ -1,0 +1,32 @@
+{
+  "name": "apiNG-plugin-bandsintown",
+  "homepage": "https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown",
+  "authors": [
+    "Jonathan Hornung <jonathan.hornung@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "description": "bandsintown plugin for apiNG",
+  "main": "dist/apiNG-plugin-bandsintown.min.js",
+  "moduleType": [],
+  "keywords": [
+    "aping",
+    "bandsintown",
+    "angularjs",
+    "events",
+    "rest",
+    "api",
+    "json"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "apiNG": "*",
+    "angular-bandsintown-api-factory": "*"
+  }
+}

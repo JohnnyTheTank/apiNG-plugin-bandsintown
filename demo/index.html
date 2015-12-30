@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandsintown Demo</title>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="../bower_components/apiNG/dist/aping.min.js"></script>
+    <script src="aping-config.js"></script>
+    <script src="app.js"></script>
+    <script src="../bower_components/angular-bandsintown-api-factory/src/angular-bandsintown-api-factory.js"></script>
+    <script src="../src/aping-bandsintown-directive.js"></script>
+    <script src="../src/aping-bandsintown-helper.js"></script>
+</head>
+<body ng-app="app">
+    <aping model="event"
+           get-native-data="false"
+           items="2"
+           aping-bandsintown="[{'artist':'Prinz Pi', 'showAvatar':true}]">
+    </aping>
+
+    <hr>
+    <aping model="event"
+           aping-bandsintown="[{'artist':'Prinz Pi','location':'munich,germany', 'date':'all', 'recommended':true}]">
+    </aping>
+
+</body>
+</html>
