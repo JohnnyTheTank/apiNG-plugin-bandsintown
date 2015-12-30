@@ -1,6 +1,6 @@
 {
   "name": "aping-plugin-bandsintown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "bandsintown plugin for apiNG",
   "main": "Gruntfile.js",
   "scripts": {

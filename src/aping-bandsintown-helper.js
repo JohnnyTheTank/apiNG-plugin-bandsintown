@@ -105,7 +105,7 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
             event_url: _item.facebook_rsvp_url || undefined, //URL to the event
             ticket_url: _item.ticket_url || undefined, //URL to the ticket
             intern_id: _item.id || undefined, // INTERN ID of event
-            text: _item.title || undefined,
+            caption: _item.title || undefined,
             source: _item.artists || undefined,
             sold_out: _item.ticket_status ? _item.ticket_status == "unavailable" : undefined,
         });
