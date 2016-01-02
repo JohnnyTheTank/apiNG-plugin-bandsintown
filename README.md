@@ -27,7 +27,7 @@ You can choose your preferred method of installation:
 ### b) Include files
 Include `apiNG-plugin-bandsintown.min.js` in your apiNG application
 ```html
-<script src="bower_components/apiNG-plugin-bandsintown/dist/apiNG-plugin-bandsintown.min.js"></script>
+<script src="bower_components/apiNG-plugin-bandsintown/dist/aping-plugin-bandsintown.min.js"></script>
 ```
 
 ### c) Add dependencies
