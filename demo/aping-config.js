@@ -2,7 +2,7 @@
 apingApp.config(['$provide', function ($provide) {
 
     $provide.constant("apingApiKeys", {
-        'bandsintown': [{'app_id':'apiNG'}],
+        bandsintown: [{'app_id':'apiNG'}],
     });
 
     $provide.constant("apingDefaultSettings", {
