@@ -25,7 +25,7 @@ You can choose your preferred method of installation:
 * Download from github: [apiNG-plugin-bandsintown.zip](https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown/zipball/master)
 
 ### b) Include files
-Include `apiNG-plugin-bandsintown.min.js` in your apiNG application
+Include `aping-plugin-bandsintown.min.js` in your apiNG application
 ```html
 <script src="bower_components/apiNG-plugin-bandsintown/dist/aping-plugin-bandsintown.min.js"></script>
 ```
