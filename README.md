@@ -5,7 +5,7 @@
 
 # Information
 * **Supported apiNG models: `event`**
-* Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in minified distribution file)_
+* Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
 
 # Documentation
     I.   INSTALLATION
