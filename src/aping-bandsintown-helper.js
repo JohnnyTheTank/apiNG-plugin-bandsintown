@@ -1,18 +1,12 @@
 "use strict";
 
-/**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown
- @licence MIT
- */
-
 jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTimeHelper', 'apingUtilityHelper', function (apingModels, apingTimeHelper, apingUtilityHelper) {
     this.getThisPlattformString = function () {
         return "bandsintown";
     };
 
     this.getThisPlattformLink = function () {
-        return "https://bandsintown.com/";
+        return "http://bandsintown.com/";
     };
 
     this.compareStrings = function (_string1, _string2) {
@@ -61,7 +55,8 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
             var _this = this;
 
 
-            angular.forEach(_data, function (value, key) {
+
+            angular.forEach(_data.data, function (value, key) {
 
                 if (_helperObject.items > 0 && requestResults.length < _helperObject.items) {
                     var tempResult;
@@ -112,6 +107,8 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
 
         if(_item.artists && _item.artists.length > 0) {
             var artistTempObject = this.getArtistFromArray(_item.artists, _helperObject.artist);
+
+            console.log(artistTempObject);
 
             if(typeof artistTempObject.artist_name !== "undefined") {
                 eventObject.artist_name = artistTempObject.artist_name;

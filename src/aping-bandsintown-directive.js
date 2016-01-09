@@ -1,11 +1,5 @@
 "use strict";
 
-/**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown
- @licence MIT
- */
-
 var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsintown'])
     .directive('apingBandsintown', ['apingBandsintownHelper', 'apingUtilityHelper', 'bandsintownFactory', function (apingBandsintownHelper, apingUtilityHelper, bandsintownFactory) {
         return {
@@ -96,7 +90,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                                 }
 
                                 bandsintownFactory.getRecommendedEventsFromArtistByLocation(requestObject)
-                                    .success(function (_data) {
+                                    .then(function (_data) {
                                         if (_data) {
                                             apingController.concatToResults(apingBandsintownHelper.getObjectByJsonData(_data, helperObject));
                                             return;
@@ -104,7 +98,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                                     });
                             } else {
                                 bandsintownFactory.getEventsFromArtistByLocation(requestObject)
-                                    .success(function (_data) {
+                                    .then(function (_data) {
                                         if (_data) {
                                             apingController.concatToResults(apingBandsintownHelper.getObjectByJsonData(_data, helperObject));
                                             return;
@@ -113,7 +107,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                             }
                         } else {
                             bandsintownFactory.getEventsFromArtist(requestObject)
-                                .success(function (_data) {
+                                .then(function (_data) {
                                     if (_data) {
                                         apingController.concatToResults(apingBandsintownHelper.getObjectByJsonData(_data, helperObject));
                                     }

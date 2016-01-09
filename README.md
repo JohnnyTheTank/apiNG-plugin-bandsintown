@@ -13,21 +13,31 @@
     III. USAGE
 
 ## I. INSTALLATION
-    a) Get files
-    b) Include files
+    a) Get file
+    b) Include file
     c) Add dependencies
     d) Add the plugin
 
-### a) Get files
+### a) Get file
 You can choose your preferred method of installation:
 
-* Via bower: `bower install apiNG-plugin-bandsintown --save`
-* Download from github: [apiNG-plugin-bandsintown.zip](https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown/zipball/master)
+1. Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or downloaded files:
+    1. `bower install apiNG-plugin-bandsintown --save`
+    2. `npm install aping-plugin-bandsintown --save`
+    3. download [apiNG-plugin-bandsintown.zip](https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown/zipball/master)
 
-### b) Include files
+### b) Include file
 Include `aping-plugin-bandsintown.min.js` in your apiNG application
+
 ```html
+<!-- when using bower -->
 <script src="bower_components/apiNG-plugin-bandsintown/dist/aping-plugin-bandsintown.min.js"></script>
+
+<!-- when using npm -->
+<script src="node_modules/aping-plugin-bandsintown/dist/aping-plugin-bandsintown.min.js"></script>
+
+<!-- when using downloaded files -->
+<script src="aping-plugin-bandsintown.min.js"></script>
 ```
 
 ### c) Add dependencies
