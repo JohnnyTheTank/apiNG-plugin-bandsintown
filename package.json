@@ -1,8 +1,8 @@
 {
   "name": "aping-plugin-bandsintown",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "bandsintown plugin for apiNG",
-  "main": "dist/apiNG-plugin-bandsintown.min.js",
+  "main": "dist/aping-plugin-bandsintown.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
