@@ -1,7 +1,7 @@
 {
   "name": "aping-plugin-bandsintown",
-  "version": "0.7.1",
-  "description": "bandsintown plugin for apiNG",
+  "version": "0.7.5",
+  "description": "BandsInTown plugin for apiNG",
   "main": "dist/aping-plugin-bandsintown.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,12 +20,12 @@
     "json",
     "angular"
   ],
-  "author": "Jonathan Hornung",
+  "author": "Jonathan Hornung <jonathan.hornung@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown/issues"
   },
-  "homepage": "https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown#readme",
+  "homepage": "https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",

@@ -1,8 +1,8 @@
 /**
     @name: aping-plugin-bandsintown 
-    @version: 0.7.0 (09-01-2016) 
-    @author: Jonathan Hornung 
-    @url: https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown#readme 
+    @version: 0.7.5 (10-01-2016) 
+    @author: Jonathan Hornung <jonathan.hornung@gmail.com> 
+    @url: https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown 
     @license: MIT
 */
 "use strict";
