@@ -7,18 +7,21 @@
 * **Supported apiNG models: `event`**
 * Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
 
+
 # Documentation
-    I.   INSTALLATION
-    II.  API KEY
-    III. USAGE
+1. [INSTALLATION]()
+    1. Get file
+    2. Include file
+    3. Add dependencies
+    4. Add the plugin
+2. API KEY
+3. USAGE
+    1. Models
+    2. Requests
 
-## I. INSTALLATION
-    a) Get file
-    b) Include file
-    c) Add dependencies
-    d) Add the plugin
+## 1. INSTALLATION
 
-### a) Get file
+### I. Get file
 You can choose your preferred method of installation:
 
 Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or downloaded files:
@@ -27,7 +30,7 @@ Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or d
 * `npm install aping-plugin-bandsintown --save`
 * download [apiNG-plugin-bandsintown.zip](https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown/zipball/master)
 
-### b) Include file
+### II. Include file
 Include `aping-plugin-bandsintown.min.js` in your apiNG application
 
 ```html
@@ -41,13 +44,13 @@ Include `aping-plugin-bandsintown.min.js` in your apiNG application
 <script src="aping-plugin-bandsintown.min.js"></script>
 ```
 
-### c) Add dependencies
+### III. Add dependencies
 Add the module `jtt_aping_bandsintown` as a dependency to your app module:
 ```js
 var app = angular.module('app', ['jtt_aping', 'jtt_aping_bandsintown']);
 ```
 
-### d) Add the plugin
+### IV. Add the plugin
 Add the plugin's directive `aping-bandsintown="[]"` to your apiNG directive and configure your requests (_**III. USAGE**_)
 ```html
 <aping
@@ -58,7 +61,7 @@ Add the plugin's directive `aping-bandsintown="[]"` to your apiNG directive and 
 </aping>
 ```
 
-## II. API KEY
+## 2. API KEY
 [Official BandsInTown Authentication Docs:](http://bandsintown.com/api/authentication)
 > The application ID can be anything, but should be a word that describes your application or company.
 
@@ -81,11 +84,9 @@ apingApp.config(['$provide', function ($provide) {
 
 :warning: Replace `<YOUR_BANDSINTOWN_APP_ID>` with a word that describes your application or company
 
-## III. USAGE
-    a) Models
-    b) Requests
+## 3. USAGE
 
-### a) Models
+### I. Models
 Supported apiNG models
 
 |  model   | content |
@@ -93,7 +94,7 @@ Supported apiNG models
 | `event` | **concerts, tours, shows** |
 
 
-### b) Requests
+### II. Requests
 Every **apiNG plugin** expects an array of **requests** as html attribute.
 
 #### Requests by Artist
