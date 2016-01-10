@@ -5,9 +5,9 @@
 
 # Information
 * **Supported apiNG models: `event`**
-* Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
 * :warning: This plugin needs an [API KEY](#2-api-key)
 * This plugin supports the [`get-native-data` parameter](https://aping.readme.io/docs/configuration#parameters)
+* Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
 
 # Documentation
 1. [INSTALLATION](#1-installation)
@@ -52,7 +52,7 @@ var app = angular.module('app', ['jtt_aping', 'jtt_aping_bandsintown']);
 ```
 
 ### IV. Add the plugin
-Add the plugin's directive `aping-bandsintown="[]"` to your apiNG directive and configure your requests (_**III. USAGE**_)
+Add the plugin's directive `aping-bandsintown="[]"` to your apiNG directive and [configure your requests](#ii-requests)
 ```html
 <aping
     template-url="templates/event.html"
