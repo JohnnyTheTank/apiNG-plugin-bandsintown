@@ -6,7 +6,8 @@
 # Information
 * **Supported apiNG models: `event`**
 * Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
-
+* This plugin needs an [API KEY](#2-api-key)
+* This plugin supports the [`get-native-data` parameter](https://aping.readme.io/docs/configuration#parameters)
 
 # Documentation
 1. [INSTALLATION](#1-installation)
