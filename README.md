@@ -9,13 +9,13 @@
 
 
 # Documentation
-1. [INSTALLATION]()
+1. [INSTALLATION](#1-installation)
     1. Get file
     2. Include file
     3. Add dependencies
     4. Add the plugin
-2. API KEY
-3. USAGE
+2. [API KEY](#2-api-key)
+3. [USAGE](#3-usage)
     1. Models
     2. Requests
 
