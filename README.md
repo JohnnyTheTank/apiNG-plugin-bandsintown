@@ -23,8 +23,6 @@
 ## 1. INSTALLATION
 
 ### I. Get file
-You can choose your preferred method of installation:
-
 Install via either [bower](http://bower.io/), [npm](https://www.npmjs.com/) or downloaded files:
 
 * `bower install apiNG-plugin-bandsintown --save`
