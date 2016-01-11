@@ -64,19 +64,17 @@ Add the plugin's directive `aping-bandsintown="[]"` to your apiNG directive and 
 [Official BandsInTown Authentication Docs:](http://bandsintown.com/api/authentication)
 > The application ID can be anything, but should be a word that describes your application or company.
 
-Open `js/apiNG/aping-config.js` in your application folder. It should be look like this snippet:
+Create and open `js/apiNG/aping-config.js` in your application folder. It should be look like this snippet:
 ```js
 apingApp.config(['$provide', function ($provide) {
-    $provide.constant("apingApiKeys", {
-        //...
-        bandsintown: [
-            {'app_id':'<YOUR_BANDSINTOWN_APP_ID>'}
-        ],
-        //...
-    });
-
-    $provide.constant("apingDefaultSettings", {
-        //...
+    $provide.value("apingDefaultSettings", {
+        apingApiKeys : {
+            //...
+            bandsintown: [
+                {'app_id':'<YOUR_BANDSINTOWN_APP_ID>'}
+            ],
+            //...
+        }
     });
 }]);
 ```

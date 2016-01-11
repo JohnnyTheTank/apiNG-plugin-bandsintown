@@ -12,16 +12,21 @@
     <script src="../dist/aping-plugin-bandsintown.js"></script>
 </head>
 <body ng-app="app">
-    <aping model="event"
-           get-native-data="false"
-           items="2"
-           aping-bandsintown="[{'artist':'Prinz Pi', 'showAvatar':true}]">
+
+    <aping
+            template-url="template.html"
+            model="event"
+            items="2"
+            aping-bandsintown="[{'artist':'Prinz Pi', 'showAvatar':true}]">
     </aping>
 
     <hr>
-    <aping model="event"
-           aping-bandsintown="[{'artist':'Prinz Pi','location':'munich,germany', 'date':'all', 'recommended':true}]">
+    <aping
+            template-url="template.html"
+            model="event"
+            aping-bandsintown="[{'artist':'Prinz Pi','location':'munich,germany', 'date':'all', 'recommended':true}]">
     </aping>
+
 
 </body>
 </html>

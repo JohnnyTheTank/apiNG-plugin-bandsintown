@@ -1,6 +1,6 @@
 /**
     @name: aping-plugin-bandsintown 
-    @version: 0.7.5 (10-01-2016) 
+    @version: 0.7.6 (11-01-2016) 
     @author: Jonathan Hornung <jonathan.hornung@gmail.com> 
     @url: https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown 
     @license: MIT
@@ -32,6 +32,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                     } else {
                         helperObject.items = appSettings.items;
                     }
+
                     if(typeof appSettings.getNativeData !== "undefined") {
                         helperObject.getNativeData = appSettings.getNativeData;
                     } else {
@@ -49,7 +50,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                         requestObject.count = appSettings.items;
                     }
 
-                    if(requestObject.count == 0) {
+                    if(requestObject.count === 0) {
                         return false;
                     }
 
@@ -133,7 +134,7 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
         return "bandsintown";
     };
 
-    this.getThisPlattformLink = function () {
+    this.getThisPlatformLink = function () {
         return "http://bandsintown.com/";
     };
 
@@ -182,11 +183,9 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
         if (_data) {
             var _this = this;
 
-
-
             angular.forEach(_data.data, function (value, key) {
 
-                if (_helperObject.items > 0 && requestResults.length < _helperObject.items) {
+                if (typeof _helperObject.items === "undefined" || (_helperObject.items > 0 && requestResults.length < _helperObject.items)) {
                     var tempResult;
                     if (_helperObject.getNativeData === true || _helperObject.getNativeData === "true") {
                         tempResult = value;
@@ -235,8 +234,6 @@ jjtApingBandsintown.service('apingBandsintownHelper', ['apingModels', 'apingTime
 
         if(_item.artists && _item.artists.length > 0) {
             var artistTempObject = this.getArtistFromArray(_item.artists, _helperObject.artist);
-
-            console.log(artistTempObject);
 
             if(typeof artistTempObject.artist_name !== "undefined") {
                 eventObject.artist_name = artistTempObject.artist_name;
