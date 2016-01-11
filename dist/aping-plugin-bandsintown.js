@@ -1,6 +1,6 @@
 /**
     @name: aping-plugin-bandsintown 
-    @version: 0.7.6 (11-01-2016) 
+    @version: 0.7.7 (11-01-2016) 
     @author: Jonathan Hornung <jonathan.hornung@gmail.com> 
     @url: https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown 
     @license: MIT
@@ -50,7 +50,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                         requestObject.count = appSettings.items;
                     }
 
-                    if(requestObject.count === 0) {
+                    if(requestObject.count === 0 || requestObject.count === '0') {
                         return false;
                     }
 

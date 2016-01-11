@@ -1,6 +1,6 @@
 {
   "name": "aping-plugin-bandsintown",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "description": "BandsInTown plugin for apiNG",
   "main": "dist/aping-plugin-bandsintown.min.js",
   "scripts": {

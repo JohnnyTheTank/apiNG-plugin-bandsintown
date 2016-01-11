@@ -43,7 +43,7 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                         requestObject.count = appSettings.items;
                     }
 
-                    if(requestObject.count === 0) {
+                    if(requestObject.count === 0 || requestObject.count === '0') {
                         return false;
                     }
 
