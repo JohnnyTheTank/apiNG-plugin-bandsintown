@@ -1,11 +1,14 @@
 [logo]: http://aping.io/logo/320/aping-plugin.png "apiNG Plugin"
 ![apiNG][logo]
 
+[![npm version](https://badge.fury.io/js/aping-plugin-bandsintown.png)](https://badge.fury.io/js/aping-plugin-bandsintown)
+[![Bower version](https://badge.fury.io/bo/apiNG-plugin-bandsintown.png)](https://badge.fury.io/bo/apiNG-plugin-bandsintown)
+
 **_apiNG-plugin-bandsintown_** is a [BandsInTown v2 API](http://bandsintown.com/api/requests) plugin for [**apiNG**](https://github.com/JohnnyTheTank/apiNG).
 
 # Information
 * **Supported apiNG models: `event`**
-* This plugin supports the [`get-native-data` parameter](https://aping.readme.io/docs/configuration#parameters)
+* This plugin supports the [`get-native-data` parameter](https://aping.readme.io/docs/advanced#parameters)
 * This plugin needs an [api key](#2-api-key) :warning:
 * Used promise library: [angular-bandsintown-api-factory](https://github.com/JohnnyTheTank/angular-bandsintown-api-factory) _(included in distribution files)_
 
@@ -13,7 +16,7 @@
 1. [INSTALLATION](#1-installation)
     1. Get file
     2. Include file
-    3. Add dependencies
+    3. Add dependency
     4. Add plugin
 2. [API KEY](#2-api-key)
 3. [USAGE](#3-usage)
@@ -43,7 +46,7 @@ Include `aping-plugin-bandsintown.min.js` in your apiNG application
 <script src="aping-plugin-bandsintown.min.js"></script>
 ```
 
-### III. Add dependencies
+### III. Add dependency
 Add the module `jtt_aping_bandsintown` as a dependency to your app module:
 ```js
 var app = angular.module('app', ['jtt_aping', 'jtt_aping_bandsintown']);
