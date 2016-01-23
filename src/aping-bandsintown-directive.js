@@ -1,6 +1,6 @@
 "use strict";
 
-var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsintown'])
+angular.module("jtt_aping_bandsintown", ['jtt_bandsintown'])
     .directive('apingBandsintown', ['apingBandsintownHelper', 'apingUtilityHelper', 'bandsintownFactory', function (apingBandsintownHelper, apingUtilityHelper, bandsintownFactory) {
         return {
             require: '?aping',
@@ -17,16 +17,16 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                     //create helperObject for helper function call
                     var helperObject = {
                         model: appSettings.model,
-                        showAvatar : request.showAvatar || false,
+                        showAvatar: request.showAvatar || false,
                         artist: request.artist || undefined
                     };
-                    if(typeof request.items !== "undefined") {
+                    if (typeof request.items !== "undefined") {
                         helperObject.items = request.items;
                     } else {
                         helperObject.items = appSettings.items;
                     }
 
-                    if(typeof appSettings.getNativeData !== "undefined") {
+                    if (typeof appSettings.getNativeData !== "undefined") {
                         helperObject.getNativeData = appSettings.getNativeData;
                     } else {
                         helperObject.getNativeData = false;
@@ -37,56 +37,56 @@ var jjtApingBandsintown = angular.module("jtt_aping_bandsintown", ['jtt_bandsint
                         app_id: apingUtilityHelper.getApiCredentials(apingBandsintownHelper.getThisPlattformString(), "app_id") || 'apiNG',
                     };
 
-                    if(typeof request.items !== "undefined") {
+                    if (typeof request.items !== "undefined") {
                         requestObject.count = request.items;
                     } else {
                         requestObject.count = appSettings.items;
                     }
 
-                    if(requestObject.count === 0 || requestObject.count === '0') {
+                    if (requestObject.count === 0 || requestObject.count === '0') {
                         return false;
                     }
 
                     // -1 is "no explicit limit". same for NaN value
-                    if(requestObject.count < 0 || isNaN(requestObject.count)) {
+                    if (requestObject.count < 0 || isNaN(requestObject.count)) {
                         requestObject.count = undefined;
                     }
 
-                    if(request.artist) {
+                    if (request.artist) {
 
                         requestObject.artist = request.artist;
 
-                        if(typeof request.artist_id !== "undefined") {
+                        if (typeof request.artist_id !== "undefined") {
                             requestObject.artist_id = request.artist_id;
                         }
 
-                        if(typeof request.date !== "undefined") {
+                        if (typeof request.date !== "undefined") {
                             requestObject.date = request.date;
                         }
 
-                        if(typeof request.start_date !== "undefined" && typeof request.end_date !== "undefined") {
-                            requestObject.date = request.start_date+","+request.end_date;
+                        if (typeof request.start_date !== "undefined" && typeof request.end_date !== "undefined") {
+                            requestObject.date = request.start_date + "," + request.end_date;
                         }
 
-                        if( typeof request.location !== "undefined"
+                        if (typeof request.location !== "undefined"
                             || (typeof request.lat !== "undefined" && typeof request.lng !== "undefined" )
                             || typeof request.ip_address !== "undefined"
                         ) {
-                            if(typeof request.location !== "undefined") {
+                            if (typeof request.location !== "undefined") {
                                 requestObject.location = request.location;
-                            } else if(typeof request.lat !== "undefined" && typeof request.lng !== "undefined") {
-                                requestObject.location = request.lat + ","+request.lng;
+                            } else if (typeof request.lat !== "undefined" && typeof request.lng !== "undefined") {
+                                requestObject.location = request.lat + "," + request.lng;
                             } else {
                                 requestObject.location = request.ip_address;
                             }
 
-                            if(typeof request.distance !== "undefined") {
+                            if (typeof request.distance !== "undefined") {
                                 requestObject.radius = request.distance;
                             }
 
-                            if(request.recommended === true || request.recommended === "true") {
+                            if (request.recommended === true || request.recommended === "true") {
 
-                                if(typeof request.exclude !== "undefined") {
+                                if (typeof request.exclude !== "undefined") {
                                     requestObject.only_recs = request.exclude;
                                 }
 
