@@ -93,7 +93,7 @@ angular.module("jtt_aping_bandsintown")
         this.getEventItemByJsonData = function (_item, _helperObject) {
             var eventObject = apingModels.getNew("event", this.getThisPlattformString());
 
-            $.extend(true, eventObject, {
+            angular.extend(eventObject, {
                 start_timestamp: _item.datetime ? new Date(_item.datetime).getTime() : undefined,
                 start_date_time: _item.datetime ? new Date(_item.datetime) : undefined,
                 event_url: _item.facebook_rsvp_url || undefined, //URL to the event
@@ -131,5 +131,4 @@ angular.module("jtt_aping_bandsintown")
 
             return eventObject;
         };
-
     }]);

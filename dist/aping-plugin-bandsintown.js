@@ -1,6 +1,6 @@
 /**
     @name: aping-plugin-bandsintown 
-    @version: 0.7.7 (24-01-2016) 
+    @version: 0.7.8 (28-01-2016) 
     @author: Jonathan Hornung <jonathan.hornung@gmail.com> 
     @url: https://github.com/JohnnyTheTank/apiNG-plugin-bandsintown 
     @license: MIT
@@ -122,8 +122,6 @@ angular.module("jtt_aping_bandsintown", ['jtt_bandsintown'])
                                 });
                         }
                     }
-
-
                 });
             }
         }
@@ -222,7 +220,7 @@ angular.module("jtt_aping_bandsintown")
         this.getEventItemByJsonData = function (_item, _helperObject) {
             var eventObject = apingModels.getNew("event", this.getThisPlattformString());
 
-            $.extend(true, eventObject, {
+            angular.extend(eventObject, {
                 start_timestamp: _item.datetime ? new Date(_item.datetime).getTime() : undefined,
                 start_date_time: _item.datetime ? new Date(_item.datetime) : undefined,
                 event_url: _item.facebook_rsvp_url || undefined, //URL to the event
@@ -260,7 +258,6 @@ angular.module("jtt_aping_bandsintown")
 
             return eventObject;
         };
-
     }]);;"use strict";
 
 angular.module("jtt_bandsintown", [])

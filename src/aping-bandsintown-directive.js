@@ -115,8 +115,6 @@ angular.module("jtt_aping_bandsintown", ['jtt_bandsintown'])
                                 });
                         }
                     }
-
-
                 });
             }
         }
