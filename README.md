@@ -2,8 +2,8 @@
 ![apiNG][logo]
 
 [![Join the chat at https://gitter.im/JohnnyTheTank/apiNG](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/JohnnyTheTank/apiNG?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![npm version](https://badge.fury.io/js/aping-plugin-bandsintown.png)](https://badge.fury.io/js/aping-plugin-bandsintown)
-[![Bower version](https://badge.fury.io/bo/apiNG-plugin-bandsintown.png)](https://badge.fury.io/bo/apiNG-plugin-bandsintown)
+[![npm version](https://badge.fury.io/js/aping-plugin-bandsintown.svg)](https://badge.fury.io/js/aping-plugin-bandsintown)
+[![Bower version](https://badge.fury.io/bo/apiNG-plugin-bandsintown.svg)](https://badge.fury.io/bo/apiNG-plugin-bandsintown)
 
 **_apiNG-plugin-bandsintown_** is a [BandsInTown v2 API](http://bandsintown.com/api/requests) plugin for [**apiNG**](https://github.com/JohnnyTheTank/apiNG).
 
